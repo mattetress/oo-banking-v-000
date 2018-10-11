@@ -16,7 +16,7 @@ class Transfer
     @sender.valid? && @receiver.valid?
   end
 
-  def send 
+  def send
     @sender.balance -= @amount
     @receiver.balance += @amount
     @status = "complete"
@@ -33,7 +33,7 @@ class Transfer
         @status = "rejected"
         "Transaction rejected. Please check your account balance."
       end
-    end
+    
   end
 
   def reverse
