@@ -38,6 +38,6 @@ class Transfer
   def reverse_transfer
      self.reverse if @status == "complete"
 
-    
+
   end
 end
