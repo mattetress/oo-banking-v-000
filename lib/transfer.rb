@@ -1,7 +1,8 @@
 class Transfer
+  attr_reader :sender
 
-  def initialize(origin, recipient, amount)
-    
+  def initialize(sender, recipient, amount)
+    @sender = sender
   end
 
 end
